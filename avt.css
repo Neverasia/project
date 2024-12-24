@@ -189,3 +189,6 @@ position:relative;
   left: 500px;
   bottom: 350px;
 }
+.head{
+    margin-left:-20px;
+}
