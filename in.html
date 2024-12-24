@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа для фрилансеров</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-top: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .sort-option {
+            display: flex;
+            align-items: center;
+        }
+        
+
+.tooltip-toggle:hover + .tooltip-text, .tooltip-toggle:focus + .tooltip-text { 
+    display: block; 
+
+}
+    </style>
+</head>
+<body>
+
+    <span class="tooltip">
+        <button class="tooltip-toggle" type="button">
+            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)">
+                <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+              </g>
+            </svg>
+            <div class="container">
+                <h1>FlexiFreelance</h1>
+                
+                <h3>Фильтры</h3>
+                
+                <label for="deadline">Дедлайн</label>
+                <input type="text" id="deadline" placeholder="Введите дедлайн">
+            
+                <label for="specialty">Специальность</label>
+                <input type="text" id="specialty" placeholder="Введите специальность">
+            
+                <label for="salary-from">Заработная плата</label>
+                <input type="number" id="salary-from" placeholder="от">
+                <input type="number" id="salary-to" placeholder="до">
+            
+                <label for="experience-from">Требуемый опыт</label>
+                <input type="number" id="experience-from" placeholder="от">
+                <input type="number" id="experience-to" placeholder="до">
+            
+                <h3>Сортировка</h3>
+                <div class="sort-option">
+                    <input type="checkbox" id="sort-old" name="sort">
+                    <label for="sort-old">Сначала старое</label>
+                </div>
+                <div class="sort-option">
+                    <input type="checkbox" id="sort-new" name="sort">
+                    <label for="sort-new">Сначала новое</label>
+                </div>
+            </div>
+          </button>
+    </span>
+    
+</body>
+</html>
