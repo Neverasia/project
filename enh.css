@@ -156,10 +156,12 @@ footer {
   margin: 10px;
 }
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-align:left;
-}
+    font-size: 24px;
+    font-weight: bold;
+    position:relative;
+    left: 160px;
+    bottom: 300px;
+  }
 
 .filter {
 background-image: url('https://www.figma.com/design/C1R0JYDCdyxRtSg1iUIYno/Untitled?node-id=3-2&m=dev&t=WQDSGmqReieUTwwb-1');
@@ -176,4 +178,8 @@ margin-left: 500px;
 
 .chei{
     transition: all 0.3s ease-tin-out;
-font-family: "Dosis", sans-serif;}
+font-family: "Dosis", sans-serif;
+position:relative;
+  left: 500px;
+  bottom: 350px;
+}
